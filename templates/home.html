@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %} 
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        {% if title %} Micro Blog - {{ title }} {% else %} Micro Blog {% endif %}
-    </title>
-</head>
+{% block content %}
+    <h1>Home Page</h1>
+    <p>Explore recent blogging!</p>
 
-<body>
-    <header>
-        <h1>Home Page</h1>
-    </header>
-
-    <main>
-        <p>Explore recent blogging!</p>
-
-        {% for post in posts %}
+    {% for post in posts %}
         <h2>{{ post.title }}</h2>
         <section>{{ post.content }}</section>
-        {% endfor %}
-    </main>
-
-    <footer style="margin-top: 30px">Build using FastAPI | Rahul Dey</footer>
-</body>
-
-</html>
+    {% endfor %} 
+{% endblock content %}
