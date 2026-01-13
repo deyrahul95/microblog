@@ -1,0 +1,5 @@
+@BaseAddress=http://localhost:8000
+
+### GET POSTS
+GET {{BaseAddress}}/api/posts
+Accept: application/json

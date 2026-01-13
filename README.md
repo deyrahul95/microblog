@@ -1,2 +1,3 @@
-# microblog
-Building micro blogging site using Python and Flask
+# MicroBlog
+
+Building micro blogging site using Python FastApi
